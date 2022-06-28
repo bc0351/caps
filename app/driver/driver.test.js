@@ -3,7 +3,7 @@ const Chance = require('chance');
 
 const chance = new Chance();
 const event_pool = require('../../event-pool.js');
-const { pickupHandler, deliveryHandler } = require('./driver');
+const { pickupHandler, deliveryHandler } = require('./index.js');
 
 jest.mock('../../event-pool.js', ()=> {
   return {
