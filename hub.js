@@ -1,8 +1,8 @@
 'use strict';
 
 const event_pool = require('./event-pool');
-require('./app/vendor');
-require('./app/driver/driver');
+require('./clients/vendor');
+require('./clients/driver/driver');
 
 event_pool.on('order', (payload) => logEvent('order', payload));
 event_pool.on('pickup', (payload) => logEvent('pickup', payload));
